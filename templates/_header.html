@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{head.description}">
+    <base href="{global.baseUrl}" />
+
+    <link rel="shortcut icon" href="public/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="public/cssFiles/utility.css">
+    <link rel="stylesheet" href="public/cssFiles/styles.css">
+    <script src="public/app.js" type="text/javascript" defer></script>
+    <title>{head.title} | {global.appName}</title>
+</head>
+<body class="{body.class}">
+    <!-- Page Wrapper -->
+    <div class="wrapper">
+        <!-- HEADER -->
+        <div class="header">
+              <!-- Logo -->
+        <a class="logo" href="/"><img src="public/images/logo.png" alt=""></a>
+        <ul class="menu">
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li class="loggedOut">
+                <a href="/account/create">Signup</a>
+            </li>
+            <li class="loggedOut">
+                <a href="/session/create">Login</a>
+            </li>
+            <li class="loggedIn">
+                <a href="/account/edit">Account Settings</a>
+              </li>
+            <li id="logoutButton" class="loggedIn">
+                <a href="#" id="logoutButton">Logout</a>
+            </li>
+        </ul>
+
+        </div>
+
+      <!-- Page-Specific Content -->
+      <div class="content">
